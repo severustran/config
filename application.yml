@@ -7,3 +7,39 @@ user:
       get:
     "/api/user/backend/dashboard/balance":
       get:
+    "/api/user/backend/dashboard/transactions/recent": 
+      get:
+    "/api/user/backend/dashboard/transactions/summary":
+      get:
+    "/api/user/backend/topup/history":
+      get:
+        - TOPUP_HISTORY_READ
+    "/api/user/backend/topup/history/merchant":
+      get:
+        - TOPUP_MERCHANT_HISTORY_READ
+    "/api/user/backend/topup/provider/list":
+      get:
+        - TOPUP_REQUEST_CREATE
+    "/api/user/backend/topup/submit":
+      post:
+        - TOPUP_REQUEST_CREATE
+    "/api/user/backend/integration":
+      get:
+        - BUSINESS_MERCHANT_INTEGRATION_READ
+      post:
+        - BUSINESS_MERCHANT_INTEGRATION_UPDATE
+    "/api/user/backend/integration/resetApiKey":
+      post:
+        - BUSINESS_MERCHANT_INTEGRATION_UPDATE
+    "/api/user/backend/payment":
+      get:
+        - BUSINESS_PAYMENT_METHOD_READ
+      put:
+        - BUSINESS_PAYMENT_METHOD_UPDATE
+    "/api/user/backend/settlement/approve":
+      put:
+        - SETTLEMENT_REQUEST_APPROVAL
+    "/api/user/backend/settlement/balance":
+      get:
+        - SETTLEMENT_WITHDRAWAL_CREATE
+        - OFFRAMP_TXN_CREATE

@@ -43,9 +43,3 @@ user:
       get:
         - SETTLEMENT_WITHDRAWAL_CREATE
         - OFFRAMP_TXN_CREATE
-    "/api/user/backend/settlement/balance/admin":
-      get:
-        - ACCOUNT_BALANCE_READ
-    "/api/user/backend/settlement/complete":
-      put:
-        - SETTLEMENT_REQUEST_APPROVAL

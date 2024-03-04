@@ -1,0 +1,9 @@
+user:
+  uri: http://localhost:8202
+  path: /api/**
+  public:
+  backend:
+    "/api/user/backend/dashboard/accountsExists":
+      get:
+    "/api/user/backend/dashboard/balance":
+      get:

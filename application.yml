@@ -12,7 +12,6 @@ config:
       /api/auth/public/backend/authStatus
       /api/auth/public/backend/captcha
       /api/auth/public/backend/info
-      /new/api
     private: 
       user:
         /api/user/wynne

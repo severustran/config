@@ -6,9 +6,6 @@ config:
   path:
     user: /api/**
     admin: /api/**
-
-#### API ####
-config:
   api:
     public:
       /api/auth/public/backend/login
@@ -20,9 +17,6 @@ config:
         /api/user/wynne
       admin:
         /api/admin
-
-#### PRIVILEGE ####
-config:
   privilege:
     get:
       /api/admin:

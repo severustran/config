@@ -2,32 +2,14 @@ user:
   uri: http://localhost:8202
   path: /api/**
   public:
-    abc
-    cde
-    efg
-  backend:
-    /api/user/backend/dashboard/accountsExists:
+    abc:
       get:
-    /api/user/backend/dashboard/balance:
-      get:
-    /api/user/backend/dashboard/transactions/recent: 
-      get:
-    /api/user/backend/dashboard/transactions/summary:
-      get:
-    /api/user/backend/topup/history:
-      get:
-        - TOPUP_HISTORY_READ
-    /api/user/backend/topup/history/merchant:
-      get:
-        - TOPUP_MERCHANT_HISTORY_READ
-    /api/user/backend/topup/provider/list:
-      get:
-        - TOPUP_REQUEST_CREATE
-    /api/user/backend/topup/submit:
       post:
-        - TOPUP_REQUEST_CREATE
-    /api/user/backend/integration:
+    cde:
       get:
-        - BUSINESS_MERCHANT_INTEGRATION_READ
+        ABC_123
       post:
-        - BUSINESS_MERCHANT_INTEGRATION_UPDATE
+    efg:
+      get:
+        EFG
+        CDE

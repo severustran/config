@@ -12,6 +12,7 @@ config:
       /api/auth/public/backend/authStatus
       /api/auth/public/backend/captcha
       /api/auth/public/backend/info
+      abasb
     private: 
       user:
         /api/user/wynne

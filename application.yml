@@ -1,15 +1,39 @@
-user:
-  uri: http://localhost:8202
-  path: /api/**
-  public:
-    abc:
-      get:
-      post:
-    cde:
-      get:
-        ABC_123
-      post:
-    efg:
-      get:
-        EFG
-        CDE
+#### Route & Path ####
+config:
+  host:
+    user: http://localhost:7070
+    admin: http://localhost:9090
+  path:
+    user: /api/**
+    admin: /api/**
+
+#### API ####
+config:
+  api:
+    public:
+      /api/auth/public/backend/login
+      /api/auth/public/backend/authStatus
+      /api/auth/public/backend/captcha
+      /api/auth/public/backend/info
+    private: 
+      user:
+        /api/user/wynne
+      admin:
+        /api/admin
+
+#### PRIVILEGE ####
+config:
+  privilege:
+    get:
+      /api/admin:
+        abc
+    put:
+      /api/user/backend/setting:
+        BUSINESS_MISC_SETTING_UPDATE
+    update:
+    delete:
+    post:
+      /api/user/wynne:
+        kkkk
+      /api/admin:
+        cde

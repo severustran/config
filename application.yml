@@ -13,13 +13,8 @@ config:
       /api/auth/public/backend/info
     private: 
       user:
-        get:
-          /api/user/wynne0
-          /api/user/wynne1
-          /api/user/wynne2
-            /api/user/wynne0:
-              abcd
-              efgh
+        get: /api/user/wynne0, /api/user/wynne1, /api/user/wynne2
+          /api/user/wynne0: abcd, efgh
         post:
           /api/user/post3
           /api/user/post4

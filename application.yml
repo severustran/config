@@ -26,8 +26,10 @@ private:
       bbb
       acac
   post:
-    /api/user/post3
-    /api/user/post4
-    /api/user/post5
+    /api/user/post3:
+    /api/user/post4:
+    /api/user/post5:
   put:
+    none:
   delete:
+    none:

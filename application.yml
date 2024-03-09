@@ -1,26 +1,37 @@
-config:
-  host:
-    user: http://localhost:7070
-    admin: http://localhost:9090
-  path:
-    user: /api/**
-    admin: /api/**
-  api:
-    public:
-      /api/auth/public/backend/login
-      /api/auth/public/backend/authStatus
-      /api/auth/public/backend/captcha
-      /api/auth/public/backend/info
-    private: 
-      user:
-        get: 
-            /api/user/wynne0
-            /api/user/wynne1
-            /api/user/wynne2
-        /api/user/wynne0: 
-            abcd
-            efgh
-        post:
-          /api/user/post3
-          /api/user/post4
-          /api/user/post5
+host:
+  user: http://localhost:7070
+  admin: http://localhost:9090
+
+path:
+  user: /api/**
+  admin: /api/**
+
+api:
+  public:
+    /api/auth/public/backend/login
+    /api/auth/public/backend/authStatus
+    /api/auth/public/backend/captcha
+    /api/auth/public/backend/info
+  private: 
+    user:
+      get: 
+          /api/user/wynne0
+          /api/user/wynne1
+          /api/user/wynne2
+      /api/user/wynne0: 
+          abcd
+          efgh
+      post:
+        /api/user/post3
+        /api/user/post4
+        /api/user/post5
+
+privilege:
+  get:
+    /api/user/wynne0:
+      abc
+      123
+    /api/user/wynne1:
+      def
+      ghi
+    

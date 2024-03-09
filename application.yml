@@ -1,7 +1,7 @@
 #### Route & Path ####
 config:
   host:
-    user: http://localhost:7079
+    user: http://localhost:7070
     admin: http://localhost:9090
   
   path:

@@ -1,3 +1,4 @@
+#### Route & Path ####
 config:
   host:
     user: http://localhost:7070
@@ -7,35 +8,26 @@ config:
     user: /api/**
     admin: /api/**
   
-  api:
-    public:
-      /api/auth/public/backend/login
-      /api/auth/public/backend/authStatus
-      /api/auth/public/backend/captcha
-      /api/auth/public/backend/info
-    private: 
-        get: 
-            /api/user/wynne0:
-              abc
-              123
-            /api/user/wynne1:
-              def
-              245
-            /api/user/wynne2:
-              ggg
-        post:
-          /api/user/post3
-          /api/user/post4
-          /api/user/post5
-        put:
-        delete:
-  
-  privilege:
-    get:
-      /api/user/wynne0:
-        abc
-        123
-      /api/user/wynne1:
-        def
-        ghi
-    
+  publicApi:
+    /api/auth/public/backend/login
+    /api/auth/public/backend/authStatus
+    /api/auth/public/backend/captcha
+    /api/auth/public/backend/info
+
+private: 
+  get: 
+    /api/user/wynne0:
+      abc
+      123
+    /api/user/wynne1:
+      cde
+      efg
+    /api/user/wynne2:
+      bbb
+      acac
+  post:
+    /api/user/post3
+    /api/user/post4
+    /api/user/post5
+  put:
+  delete:
